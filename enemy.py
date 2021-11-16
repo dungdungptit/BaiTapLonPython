@@ -2,19 +2,12 @@ import pygame
 shuriken = pygame.image.load('images/shur.png')
 
 class Naruto():
+    # init
     def __init__(self, x, y, width, height):
 	    self.x = x
 	    self.y = y
 	    self.width = width
-	    self.height = height
-	    self.speed = 10
-	    self.isjump = False
-	    self.jumpheight = 10
-	    self.left = False
-	    self.right = False
-	    self.walkCount = 0
-	    self.standing = True
-	    
+	    self.height = height 
 
     # vẽ naruto ra màn hình
     def draw(self, screen):
@@ -26,8 +19,6 @@ class Shuriken():
         self.y = y
         self.width = width
         self.height = height
-        self.facing = facing
-        self.vel = 8 * facing
         self.hitbox = (self.x,self.y,40,40)
 
     def draw(self,win):
