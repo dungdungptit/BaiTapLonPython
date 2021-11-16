@@ -108,19 +108,10 @@ class Game:
 
         return False
 
-    # xét va chạm với phi tiêu
+    # xét va chạm với phi tiêu, naruto
     def isCollide2(self, shuriken):
         distance = math.sqrt((self.birdX - shuriken.x)**2 + (self.birdY - shuriken.y)**2)
         if distance < 60:
-            return True
-        else:
-            return False
-
-    # xét va chạm với naruto
-    def isCollide3(self, naruto, check):
-        distance = math.sqrt((self.birdX - naruto.x)**2 + (self.birdY - naruto.y)**2)
-        if distance < 80:
-            check = True 
             return True
         else:
             return False
